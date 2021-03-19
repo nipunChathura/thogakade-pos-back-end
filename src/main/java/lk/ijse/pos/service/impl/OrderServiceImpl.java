@@ -50,7 +50,6 @@ public class OrderServiceImpl implements OrderService {
             boolean b = customerRepo.existsById(dto.getCustomerId());
             System.out.println(b);
             if (!repo.existsById(dto.getOrderId())) {
-                System.out.println("");
                 Order order = mapper.map(dto, Order.class);
                 repo.save(order);
                 return true;
