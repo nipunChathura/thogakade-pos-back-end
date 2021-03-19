@@ -55,7 +55,7 @@ public class OrderServiceImpl implements OrderService {
                 repo.save(order);
                 return true;
 //                if (!detailsRepo.existsById(dto.getDetails().getOrderDetailsId())){
-//                    System.out.println("CAAAAAAAAALLLLLLLLLLLLLL");
+//                    System.out.println("Order details Added");
 //                    OrderDetails details = mapper.map(dto.getDetails(), OrderDetails.class);
 //                    detailsRepo.save(details);
 //                    return true;
